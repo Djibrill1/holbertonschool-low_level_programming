@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdio.h>
 
 int main(void) {
@@ -12,5 +11,5 @@ int main(void) {
 
     return 0;
 }
- 
-gcc -o taille_types taille_types.c
+
+timeout 30 bash -c 'gcc -o size32 -m32 -std=gnu89  6-size.c'
