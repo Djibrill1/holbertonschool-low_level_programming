@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -Wall -o "${CFILE%.c}.o" -c "$CFILE" || exit 1
+
