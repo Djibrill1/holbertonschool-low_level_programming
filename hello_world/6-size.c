@@ -14,5 +14,3 @@ int main(void) {
 }
  
 gcc -o taille_types taille_types.c
-
-./taille_types
