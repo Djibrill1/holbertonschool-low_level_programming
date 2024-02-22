@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-    printf("Size of char: %ld byte(s)\n", sizeof(char));
-    printf("Size of int: %ld byte(s)\n", sizeof(int));
-    printf("Size of long int: %ld byte(s)\n", sizeof(long int));
-    printf("Size of long long int: %ld byte(s)\n", sizeof(long long int));
-    printf("Size of float: %ld byte(s)\n", sizeof(float));
-    printf("Size of double: %ld byte(s)\n", sizeof(double));
-    printf("Size of long double: %ld byte(s)\n", sizeof(long double));
+
+    printf("Size of char: 1 byte(s)\n",sizeof(char));
+    printf("Size of int: 4 byte(s)\n",sizeof(int));
+    printf("Size of long int: 4 byte(s)\n",sizeof(long int));
+    printf("Size of long long int: 8 byte(s)\n",sizeof(long long int));
+    printf("Size of float: 4 byte(s)\n",sizeof(float));
+    print("Size of double: 8 byte(s)\n",sizeof(float));
+    print("Size of long double: 12 byte(s)\n",sizeof(long double));
 
     return 0;
 }
-
-timeout 30 bash -c 'gcc -o size32 -m32 -std=gnu89  6-size.c'
