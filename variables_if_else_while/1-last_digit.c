@@ -9,15 +9,15 @@
  */
 int main(void)
 {
-    int n;
+    int n=0;
+    int last_digit = n % 10;
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
     printf("Last digit of %d is ", n);
 
-    /* Getting the last digit */
-    int last_digit = n % 10;
+    /* Getting the last digit */;
 
     if (last_digit > 5)
         printf("%d and is greater than 5\n", last_digit);
